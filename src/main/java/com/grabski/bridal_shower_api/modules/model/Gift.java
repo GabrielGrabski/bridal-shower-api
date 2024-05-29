@@ -1,15 +1,13 @@
 package com.grabski.bridal_shower_api.modules.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Table
 @Entity
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Gift {
@@ -25,4 +23,7 @@ public class Gift {
 
     @Column(name = "is_booked")
     private boolean isBooked;
+
+    @Column(name = "image_name")
+    private String imageName;
 }
