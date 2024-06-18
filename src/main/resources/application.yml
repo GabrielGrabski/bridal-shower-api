@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: 123
-    url: jdbc:postgresql://localhost:5433/bridal_shower
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
     platform: postgres
     jpa:
       show-sql: true
