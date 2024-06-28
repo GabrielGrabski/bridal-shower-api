@@ -1,0 +1,11 @@
+name: Build
+run-name: Application is being built
+
+on:
+  [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echoing application
+      - run: echo "Application is being built"
