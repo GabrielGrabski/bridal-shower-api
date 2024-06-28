@@ -2,6 +2,11 @@ FROM maven:3.9.7-eclipse-temurin-21-alpine AS build
 
 WORKDIR /build
 
+ARG PROFILE
+ARG DB_USER
+ARG DB_PASSWORD
+ARG DB_URL
+
 COPY . .
 
 RUN mvn clean install

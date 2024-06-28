@@ -1,9 +1,11 @@
 spring:
+  profiles:
+    active: ${PROFILE}
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: bridal_postgresql_user
-    password: Up4Z2oxlZICOrnRk9d2qAJs4lFizV5Zv
-    url: jdbc:postgresql://dpg-cpovtrg8fa8c73agvf20-a.ohio-postgres.render.com/bridal_postgresql
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    url: ${DB_URL}
     platform: postgres
     jpa:
       show-sql: true
